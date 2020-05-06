@@ -1,5 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <record model="ir.ui.view" id="projects_form_view">
+        <field name="name">projects.form</field>
+        <field name="model">projektai.project</field>
+        <field name="arch" type="xml">
+            <form string="Project Form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="client_id"/>
+                        <field name="manager"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                    </group>
+                    <notebook>
+                        <page string="Employees">
+                            <field name="employees_ids"/>
+                        </page>
+                        <page string="Works">
+                            <field name="work_ids">
+                                <form>
+                                    <group>
+                                        <field name="name"/>
+                                    </group>
+                                </form>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="projects_tree_view">
+        <field name="name">projects.tree</field>
+        <field name="model">projektai.project</field>
+        <field name="arch" type="xml">
+            <tree string="Project Tree">
+                <field name="name"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+                <field name="client_id"/>
+                <field name="manager"/>
+            </tree>
+        </field>
+    </record>
+
     <record model="ir.actions.act_window" id="projects_action">
         <field name="name">Projects</field>
         <field name="res_model">projektai.project</field>
@@ -8,8 +54,9 @@
 
     <menuitem id="main_projects_menu" name="My Projects"/>
     <menuitem id="projects_menu" name="Projects"
-                  parent="main_projects_menu"/>
+              parent="main_projects_menu"/>
+
     <menuitem id="projects_action_menu" name="Projects"
-                  parent="projects_menu" action="projects_action"/>
+              parent="projects_menu" action="projects_action"/>
 
 </odoo>

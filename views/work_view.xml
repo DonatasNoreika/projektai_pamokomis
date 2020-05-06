@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+<!--    <record model="ir.ui.view" id="projects_form_view">-->
+<!--        <field name="name">projects.form</field>-->
+<!--        <field name="model">projektai.project</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form string="Project Form">-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--                        <field name="name"/>-->
+<!--                        <field name="start_date"/>-->
+<!--                        <field name="end_date"/>-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+
+<!--    <record model="ir.ui.view" id="projects_tree_view">-->
+<!--        <field name="name">projects.tree</field>-->
+<!--        <field name="model">projektai.project</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree string="Project Tree">-->
+<!--                <field name="name"/>-->
+<!--                <field name="start_date"/>-->
+<!--                <field name="end_date"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+
+    <record model="ir.actions.act_window" id="works_action">
+        <field name="name">Works</field>
+        <field name="res_model">projektai.work</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="works_action_menu" name="Works"
+              parent="projects_menu" action="works_action"/>
+
+</odoo>
