@@ -32,6 +32,8 @@
         'views/project_view.xml',
         'views/work_view.xml',
         'views/invoice_view.xml',
+        'views/partner_inherited_view.xml',
+        'views/employee_inherited_view.xml',
         # 'templates.xml',
     ],
     # only loaded in demonstration mode
