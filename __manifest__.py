@@ -31,6 +31,7 @@
         'security/ir.model.access.csv',
         'views/project_view.xml',
         'views/work_view.xml',
+        'views/invoice_view.xml',
         # 'templates.xml',
     ],
     # only loaded in demonstration mode

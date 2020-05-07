@@ -13,3 +13,4 @@ class Project(models.Model):
 
     employees_ids = fields.Many2many('hr.employee', string="Employees")
     work_ids = fields.One2many('projektai.work', 'project_id', string="Works")
+    invoice_ids = fields.One2many('projektai.invoice', 'project_id', string="Invoices")

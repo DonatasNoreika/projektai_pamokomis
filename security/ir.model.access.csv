@@ -1,3 +1,5 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
 access_projektai_projects,projektai.project,model_projektai_project,,1,1,1,1
 access_projektai_works,projektai.work,model_projektai_work,,1,1,1,1
+access_projektai_invoice,projektai.invoice,model_projektai_invoice,,1,1,1,1
+access_projektai_invoiceline,projektai.invoiceline,model_projektai_invoiceline,,1,1,1,1

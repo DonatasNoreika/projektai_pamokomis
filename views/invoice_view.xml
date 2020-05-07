@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record model="ir.ui.view" id="invoices_form_view">
+        <field name="name">invoices.form</field>
+        <field name="model">projektai.invoice</field>
+        <field name="arch" type="xml">
+            <form string="Invoice Form">
+                <sheet>
+                    <group>
+                        <field name="number"/>
+                        <field name="date"/>
+                        <field name="project_id"/>
+                    </group>
+                    <field name="line_ids">
+                        <tree editable="True">
+                            <field name="work_id"/>
+                            <field name="suma"/>
+                        </tree>
+                        <form>
+                            <group>
+                                <field name="work_id"/>
+                                <field name="suma"/>
+                            </group>
+                        </form>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="invoices_tree_view">
+        <field name="name">invoices.tree</field>
+        <field name="model">projektai.invoice</field>
+        <field name="arch" type="xml">
+            <tree string="Invoice Tree">
+                <field name="number"/>
+                <field name="date"/>
+                <field name="project_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.act_window" id="invoices_action">
+        <field name="name">Invoices</field>
+        <field name="res_model">projektai.invoice</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="invoices_action_menu" name="Invoices"
+              parent="projects_menu" action="invoices_action"/>
+
+</odoo>
