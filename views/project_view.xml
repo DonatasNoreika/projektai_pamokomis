@@ -12,6 +12,7 @@
                         <field name="manager"/>
                         <field name="start_date"/>
                         <field name="end_date"/>
+                        <field name="employees_percentage" widget="progressbar"/>
                     </group>
                     <notebook>
                         <page string="Employees">
@@ -58,14 +59,85 @@
                 <field name="end_date"/>
                 <field name="client_id"/>
                 <field name="manager"/>
+                <field name="employees_percentage" widget="progressbar"/>
             </tree>
+        </field>
+    </record>
+
+    <!-- calendar view -->
+    <record model="ir.ui.view" id="projects_calendar_view">
+        <field name="name">projects.calendar</field>
+        <field name="model">projektai.project</field>
+        <field name="arch" type="xml">
+            <calendar string="Projects Calendar" date_start="start_date" date_stop="end_date" color="manager">
+                <field name="name"/>
+            </calendar>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="projects_graph_view">
+        <field name="name">projects.graph</field>
+        <field name="model">projektai.project</field>
+        <field name="arch" type="xml">
+            <graph string="Employees by Project">
+                <field name="name" type="row"/>
+                <field name="employees_count" type="measure"/>
+            </graph>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="projects_session_kanban">
+        <field name="name">projects.kanban</field>
+        <field name="model">projektai.project</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="manager">
+                <field name="color"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div
+                                t-attf-class="oe_kanban_color_{{kanban_getcolor(record.color.raw_value)}}
+                                                  oe_kanban_global_click_edit oe_semantic_html_override
+                                                  oe_kanban_card {{record.group_fancy==1 ? 'oe_kanban_card_fancy' : ''}}">
+                            <div class="oe_dropdown_kanban">
+                                <!-- dropdown menu -->
+                                <div class="oe_dropdown_toggle">
+                                    <i class="fa fa-bars fa-lg" title="Manage" aria-label="Manage"/>
+                                    <ul class="oe_dropdown_menu">
+                                        <li>
+                                            <a type="delete">Delete</a>
+                                        </li>
+                                        <li>
+                                            <ul class="oe_kanban_colorpicker"
+                                                data-field="color"/>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="oe_clear"></div>
+                            </div>
+                            <div t-attf-class="oe_kanban_content">
+                                <field name="employees_percentage" widget="gauge" style="width:100%;"/>
+                                <!-- title -->
+                                Project name:
+                                <field name="name"/>
+                                <br/>
+                                Start date:
+                                <field name="start_date"/>
+                                <br/>
+                                End date:
+                                <field name="end_date"/>
+                                <br/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
         </field>
     </record>
 
     <record model="ir.actions.act_window" id="projects_action">
         <field name="name">Projects</field>
         <field name="res_model">projektai.project</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">kanban,tree,form,calendar,graph,pivot</field>
     </record>
 
     <menuitem id="main_projects_menu" name="My Projects"/>
