@@ -4,3 +4,4 @@ from . import work
 from . import invoice
 from . import partner_inherited
 from . import hr_employee_inherited
+from . import wizard

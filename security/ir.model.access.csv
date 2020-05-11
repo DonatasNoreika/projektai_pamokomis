@@ -1,5 +1,9 @@
 id,name,model_id/id,group_id/id,perm_read,perm_write,perm_create,perm_unlink
-access_projektai_projects,projektai.project,model_projektai_project,,1,1,1,1
-access_projektai_works,projektai.work,model_projektai_work,,1,1,1,1
-access_projektai_invoice,projektai.invoice,model_projektai_invoice,,1,1,1,1
-access_projektai_invoiceline,projektai.invoiceline,model_projektai_invoiceline,,1,1,1,1
+access_projektai_projects,projektai.project,model_projektai_project,my_project_manager,1,1,1,1
+access_projektai_works,projektai.work,model_projektai_work,my_project_manager,1,1,1,1
+access_projektai_invoice,projektai.invoice,model_projektai_invoice,my_project_manager,1,1,1,1
+access_projektai_invoiceline,projektai.invoiceline,model_projektai_invoiceline,my_project_manager,1,1,1,1
+access_projektai_projects_read_all,projektai.project,model_projektai_project,,1,0,0,0
+access_projektai_works_read_all,projektai.work,model_projektai_work,,1,0,0,0
+access_projektai_invoice_read_all,projektai.invoice,model_projektai_invoice,,1,0,0,0
+access_projektai_invoiceline_read_all,projektai.invoiceline,model_projektai_invoiceline,,1,0,0,0
