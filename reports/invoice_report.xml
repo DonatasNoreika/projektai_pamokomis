@@ -16,6 +16,7 @@
                         <h2 t-field="doc.number"/>
                         <p><strong>Date: <span t-field="doc.date"/></strong></p>
                         <p><strong>Project: <span t-field="doc.project_id.name"/></strong></p>
+                        <p><strong>Total: <span t-field="doc.total"/></strong></p>
                         <table class="table table-condensed">
                             <thead>
                                 <tr>

@@ -10,7 +10,16 @@ class Invoice(models.Model):
 
     line_ids = fields.One2many('projektai.invoiceline', 'invoice_id', string="Lines")
 
-    total = fields.Float("Bendra suma")
+    total = fields.Float("Total", compute='_get_total', store=True)
+
+    @api.depends('line_ids.suma')
+    def _get_total(self):
+        total = 0
+        for record in self:
+            for line in record.line_ids:
+               total += line.suma
+            record.total = total
+
 
 
 class InvoiceLine(models.Model):

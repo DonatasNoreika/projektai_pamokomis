@@ -23,6 +23,9 @@
                             </group>
                         </form>
                     </field>
+                    <group>
+                        <field name="total"/>
+                    </group>
                 </sheet>
             </form>
         </field>
