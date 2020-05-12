@@ -1,0 +1,53 @@
+<odoo>
+
+    <report
+        id="report_my_project"
+        model="projektai.project"
+        string="Project Report"
+        name="projektai.report_my_project_view"
+        file="projektai.report_my_project"
+        report_type="qweb-pdf" />
+
+    <template id="report_my_project_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.name"/>
+                        <p>From <span t-field="doc.start_date"/> to <span t-field="doc.end_date"/></p>
+                        <p><strong>Client: <span t-field="doc.client_id.name"/></strong></p>
+                        <p><strong>Manager: <span t-field="doc.manager.name"/></strong></p>
+                        <h3>Works:</h3>
+                        <ul>
+                            <t t-foreach="doc.work_ids" t-as="work">
+                                <li><span t-field="work.name"/></li>
+                            </t>
+                        </ul>
+                        <h3>Employees:</h3>
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Phone</th>
+                                    <th>Email</th>
+                                    <th>Department</th>
+                                    <th>Job Position</th>
+                                </tr>
+                            </thead>
+                            <t t-foreach="docs.employees_ids" t-as="doc">
+                                <tr>
+                                    <td><span t-esc="doc.name"/></td>
+                                    <td><span t-esc="doc.work_phone"/></td>
+                                    <td><span t-field="doc.work_email"/></td>
+                                    <td><span t-field="doc.department_id"/></td>
+                                    <td><span t-field="doc.job_id.name"/></td>
+                                </tr>
+                            </t>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

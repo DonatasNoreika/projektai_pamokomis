@@ -1,0 +1,39 @@
+<odoo>
+
+    <report
+        id="report_my_invoice"
+        model="projektai.invoice"
+        string="Invoice Report"
+        name="projektai.report_my_invoice_view"
+        file="projektai.report_my_invoice"
+        report_type="qweb-pdf" />
+
+    <template id="report_my_invoice_view">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2 t-field="doc.number"/>
+                        <p><strong>Date: <span t-field="doc.date"/></strong></p>
+                        <p><strong>Project: <span t-field="doc.project_id.name"/></strong></p>
+                        <table class="table table-condensed">
+                            <thead>
+                                <tr>
+                                    <th>Work</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+                            <t t-foreach="docs.line_ids" t-as="doc">
+                                <tr>
+                                    <td><span t-esc="doc.work_id.name"/></td>
+                                    <td><span t-esc="doc.suma"/></td>
+                                </tr>
+                            </t>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>

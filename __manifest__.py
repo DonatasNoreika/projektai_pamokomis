@@ -24,7 +24,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'hr'],
+    'depends': ['base', 'hr', 'board'],
 
     # always loaded
     'data': [
@@ -35,6 +35,9 @@
         'views/invoice_view.xml',
         'views/partner_inherited_view.xml',
         'views/employee_inherited_view.xml',
+        'reports/project_report.xml',
+        'reports/invoice_report.xml',
+        'views/project_board.xml'
         # 'templates.xml',
     ],
     # only loaded in demonstration mode

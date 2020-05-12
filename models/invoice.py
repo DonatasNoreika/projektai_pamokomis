@@ -10,6 +10,8 @@ class Invoice(models.Model):
 
     line_ids = fields.One2many('projektai.invoiceline', 'invoice_id', string="Lines")
 
+    total = fields.Float("Bendra suma")
+
 
 class InvoiceLine(models.Model):
     _name = 'projektai.invoiceline'
