@@ -1,0 +1,337 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* projektai
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-11 12:40+0000\n"
+"PO-Revision-Date: 2020-05-11 15:48+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: lt\n"
+"X-Generator: Poedit 2.3\n"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid ""
+"<br/>\n"
+"                                End date:"
+msgstr ""
+"<br/>\n"
+"                                Pabaigos data:"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid ""
+"<br/>\n"
+"                                Start date:"
+msgstr ""
+"<br/>\n"
+"                                Pradžios data:"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid "<i class=\"fa fa-bars fa-lg\" title=\"Manage\" aria-label=\"Manage\"/>"
+msgstr "<i class=\"fa fa-bars fa-lg\" title=\"Tvarkyti\" aria-label=\"Tvarkyti\"/>"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.my_project_wizard_form_view
+msgid "Add"
+msgstr "Pridėti"
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.launch_my_project_wizard
+#: model_terms:ir.ui.view,arch_db:projektai.my_project_wizard_form_view
+msgid "Add Employees"
+msgstr "Pridėti darbuotojus"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.my_project_wizard_form_view
+msgid "Cancel"
+msgstr "Atšaukti"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__client_id
+msgid "Client"
+msgstr "Klientas"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__color
+msgid "Color"
+msgstr "Spalva"
+
+#. module: projektai
+#: model:ir.ui.menu,name:projektai.configuration_menu
+msgid "Configuration"
+msgstr "Konfiguracija"
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_res_partner
+msgid "Contact"
+msgstr "Kontaktai"
+
+#. module: projektai
+#: model:ir.ui.menu,name:projektai.partners_menu
+msgid "Contacts"
+msgstr "Kontaktai"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__create_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__create_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__create_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__create_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__create_uid
+msgid "Created by"
+msgstr "Sukūrė"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__create_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__create_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__create_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__create_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__create_date
+msgid "Created on"
+msgstr "Sukurta"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid "Delete"
+msgstr "Ištrinti"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__display_name
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__display_name
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__display_name
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__display_name
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__display_name
+msgid "Display Name"
+msgstr "Rodomas pavadinimas"
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_hr_employee
+msgid "Employee"
+msgstr "Darbuotojas"
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.employee_list_action
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__employees_ids
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__employees_ids
+#: model:ir.ui.menu,name:projektai.employees_menu
+#: model_terms:ir.ui.view,arch_db:projektai.projects_form_view
+msgid "Employees"
+msgstr "Darbuotojai"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_graph_view
+msgid "Employees by Project"
+msgstr "Darbuotojai pagal projektus"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__employees_count
+msgid "Employees count"
+msgstr "Darbuotojų skaičius"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__employees_percentage
+msgid "Employees percentage"
+msgstr "Darbuotojų procentas"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__end_date
+msgid "End Date"
+msgstr "Pabaigos data"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__id
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__id
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__id
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__id
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__id
+msgid "ID"
+msgstr "ID"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__invoice_id
+msgid "Invoice"
+msgstr "Sąskaita-faktūra"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.invoices_form_view
+msgid "Invoice Form"
+msgstr "Sąskaitos forma"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.invoices_tree_view
+msgid "Invoice Tree"
+msgstr "Sąskaitų sąrašas"
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.invoices_action
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__invoice_ids
+#: model:ir.ui.menu,name:projektai.invoices_action_menu
+#: model_terms:ir.ui.view,arch_db:projektai.projects_form_view
+msgid "Invoices"
+msgstr "Sąskaitos-faktūros"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice____last_update
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline____last_update
+#: model:ir.model.fields,field_description:projektai.field_projektai_project____last_update
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard____last_update
+#: model:ir.model.fields,field_description:projektai.field_projektai_work____last_update
+msgid "Last Modified on"
+msgstr "Paskutinį kartą modifikuota"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__write_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__write_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__write_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__write_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__write_uid
+msgid "Last Updated by"
+msgstr "Paskutinį kartą atnaujinta"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__write_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__write_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__write_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__write_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__write_date
+msgid "Last Updated on"
+msgstr "Paskutinį kartą atnaujinta"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__line_ids
+msgid "Lines"
+msgstr "Eilutės"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_hr_employee__manager
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__manager
+msgid "Manager"
+msgstr "Vadovas"
+
+#. module: projektai
+#: model:res.groups,name:projektai.my_project_manager
+msgid "My Project Manager"
+msgstr "Mano projektų vadovas"
+
+#. module: projektai
+#: model:ir.ui.menu,name:projektai.main_projects_menu
+msgid "My Projects"
+msgstr "Mano projektai"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__name
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__name
+msgid "Name"
+msgstr "Pavadinimas"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__number
+msgid "Number"
+msgstr "Numeris"
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.partner_list_action
+msgid "Partners"
+msgstr "Partneriai"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__project_id
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__project_ids
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__project_id
+msgid "Project"
+msgstr "Projektas"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_form_view
+msgid "Project Form"
+msgstr "Projekto forma"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_tree_view
+msgid "Project Tree"
+msgstr "Projektų sąrašas"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid "Project name:"
+msgstr "Projekto pavadinimas"
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.projects_action
+#: model:ir.model.fields,field_description:projektai.field_hr_employee__project_ids
+#: model:ir.model.fields,field_description:projektai.field_res_partner__project_ids
+#: model:ir.model.fields,field_description:projektai.field_res_users__project_ids
+#: model:ir.ui.menu,name:projektai.projects_action_menu
+#: model:ir.ui.menu,name:projektai.projects_menu
+#: model_terms:ir.ui.view,arch_db:projektai.employee_inherited_form_view
+#: model_terms:ir.ui.view,arch_db:projektai.partner_inherited_form_view
+msgid "Projects"
+msgstr "Projektai"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_calendar_view
+msgid "Projects Calendar"
+msgstr "Projektų kalendorius"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__date
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__start_date
+msgid "Start Date"
+msgstr "Pradžios data"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__suma
+msgid "Sum"
+msgstr "Suma"
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_wizard
+msgid "Wizard: Quick Registration of Employees to Projects"
+msgstr "Vedlys: Greitas darbuotojų priskyrimas projektams"
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__work_id
+msgid "Work"
+msgstr "Darbas"
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.works_action
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__work_ids
+#: model:ir.ui.menu,name:projektai.works_action_menu
+#: model_terms:ir.ui.view,arch_db:projektai.projects_form_view
+msgid "Works"
+msgstr "Darbai"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.my_project_wizard_form_view
+msgid "or"
+msgstr "arba"
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_invoice
+msgid "projektai.invoice"
+msgstr "projektai.invoice"
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_invoiceline
+msgid "projektai.invoiceline"
+msgstr "projektai.invoiceline"
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_project
+msgid "projektai.project"
+msgstr "projektai.project"
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_work
+msgid "projektai.work"
+msgstr "projektai.work"

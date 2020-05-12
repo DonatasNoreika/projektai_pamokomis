@@ -1,0 +1,331 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* projektai
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-11 12:40+0000\n"
+"PO-Revision-Date: 2020-05-11 12:40+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid ""
+"<br/>\n"
+"                                End date:"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid ""
+"<br/>\n"
+"                                Start date:"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid "<i class=\"fa fa-bars fa-lg\" title=\"Manage\" aria-label=\"Manage\"/>"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.my_project_wizard_form_view
+msgid "Add"
+msgstr ""
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.launch_my_project_wizard
+#: model_terms:ir.ui.view,arch_db:projektai.my_project_wizard_form_view
+msgid "Add Employees"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.my_project_wizard_form_view
+msgid "Cancel"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__client_id
+msgid "Client"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__color
+msgid "Color"
+msgstr ""
+
+#. module: projektai
+#: model:ir.ui.menu,name:projektai.configuration_menu
+msgid "Configuration"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: projektai
+#: model:ir.ui.menu,name:projektai.partners_menu
+msgid "Contacts"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__create_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__create_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__create_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__create_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__create_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__create_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__create_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__create_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid "Delete"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__display_name
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__display_name
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__display_name
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__display_name
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_hr_employee
+msgid "Employee"
+msgstr ""
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.employee_list_action
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__employees_ids
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__employees_ids
+#: model:ir.ui.menu,name:projektai.employees_menu
+#: model_terms:ir.ui.view,arch_db:projektai.projects_form_view
+msgid "Employees"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_graph_view
+msgid "Employees by Project"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__employees_count
+msgid "Employees count"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__employees_percentage
+msgid "Employees percentage"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__end_date
+msgid "End Date"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__id
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__id
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__id
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__id
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__id
+msgid "ID"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__invoice_id
+msgid "Invoice"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.invoices_form_view
+msgid "Invoice Form"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.invoices_tree_view
+msgid "Invoice Tree"
+msgstr ""
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.invoices_action
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__invoice_ids
+#: model:ir.ui.menu,name:projektai.invoices_action_menu
+#: model_terms:ir.ui.view,arch_db:projektai.projects_form_view
+msgid "Invoices"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice____last_update
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline____last_update
+#: model:ir.model.fields,field_description:projektai.field_projektai_project____last_update
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard____last_update
+#: model:ir.model.fields,field_description:projektai.field_projektai_work____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__write_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__write_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__write_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__write_uid
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__write_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__write_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__write_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__write_date
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__line_ids
+msgid "Lines"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_hr_employee__manager
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__manager
+msgid "Manager"
+msgstr ""
+
+#. module: projektai
+#: model:res.groups,name:projektai.my_project_manager
+msgid "My Project Manager"
+msgstr ""
+
+#. module: projektai
+#: model:ir.ui.menu,name:projektai.main_projects_menu
+msgid "My Projects"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__name
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__name
+msgid "Name"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__number
+msgid "Number"
+msgstr ""
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.partner_list_action
+msgid "Partners"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__project_id
+#: model:ir.model.fields,field_description:projektai.field_projektai_wizard__project_ids
+#: model:ir.model.fields,field_description:projektai.field_projektai_work__project_id
+msgid "Project"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_form_view
+msgid "Project Form"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_tree_view
+msgid "Project Tree"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_session_kanban
+msgid "Project name:"
+msgstr ""
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.projects_action
+#: model:ir.model.fields,field_description:projektai.field_hr_employee__project_ids
+#: model:ir.model.fields,field_description:projektai.field_res_partner__project_ids
+#: model:ir.model.fields,field_description:projektai.field_res_users__project_ids
+#: model:ir.ui.menu,name:projektai.projects_action_menu
+#: model:ir.ui.menu,name:projektai.projects_menu
+#: model_terms:ir.ui.view,arch_db:projektai.employee_inherited_form_view
+#: model_terms:ir.ui.view,arch_db:projektai.partner_inherited_form_view
+msgid "Projects"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.projects_calendar_view
+msgid "Projects Calendar"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoice__date
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__start_date
+msgid "Start Date"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__suma
+msgid "Sum"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_wizard
+msgid "Wizard: Quick Registration of Employees to Projects"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model.fields,field_description:projektai.field_projektai_invoiceline__work_id
+msgid "Work"
+msgstr ""
+
+#. module: projektai
+#: model:ir.actions.act_window,name:projektai.works_action
+#: model:ir.model.fields,field_description:projektai.field_projektai_project__work_ids
+#: model:ir.ui.menu,name:projektai.works_action_menu
+#: model_terms:ir.ui.view,arch_db:projektai.projects_form_view
+msgid "Works"
+msgstr ""
+
+#. module: projektai
+#: model_terms:ir.ui.view,arch_db:projektai.my_project_wizard_form_view
+msgid "or"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_invoice
+msgid "projektai.invoice"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_invoiceline
+msgid "projektai.invoiceline"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_project
+msgid "projektai.project"
+msgstr ""
+
+#. module: projektai
+#: model:ir.model,name:projektai.model_projektai_work
+msgid "projektai.work"
+msgstr ""
