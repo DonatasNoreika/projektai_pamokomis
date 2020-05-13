@@ -34,13 +34,13 @@
                                     <th>Job Position</th>
                                 </tr>
                             </thead>
-                            <t t-foreach="docs.employees_ids" t-as="doc">
+                            <t t-foreach="docs.employees_ids" t-as="emp">
                                 <tr>
-                                    <td><span t-esc="doc.name"/></td>
-                                    <td><span t-esc="doc.work_phone"/></td>
-                                    <td><span t-field="doc.work_email"/></td>
-                                    <td><span t-field="doc.department_id"/></td>
-                                    <td><span t-field="doc.job_id.name"/></td>
+                                    <td t-esc="emp.name"/>
+                                    <td t-esc="emp.work_phone"/>
+                                    <td t-esc="emp.work_email"/>
+                                    <td t-esc="emp.department_id"/>
+                                    <td t-esc="emp.job_id.name"/>
                                 </tr>
                             </t>
                         </table>
