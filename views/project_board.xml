@@ -57,7 +57,7 @@
         </record>
 
         <menuitem
-            name="Project Dashboard" parent="configuration_menu"
+            name="Project Dashboard" parent="projects_menu"
             action="open_board_my_project"
             sequence="1"
             id="menu_board_my_project"/>
