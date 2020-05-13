@@ -37,7 +37,8 @@
         'views/employee_inherited_view.xml',
         'reports/project_report.xml',
         'reports/invoice_report.xml',
-        'views/project_board.xml'
+        'views/project_board.xml',
+        'mail_templates.xml',
         # 'templates.xml',
     ],
     # only loaded in demonstration mode

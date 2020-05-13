@@ -5,7 +5,12 @@
         <field name="model">projektai.project</field>
         <field name="arch" type="xml">
             <form string="Project Form">
+                <header>
+                    <button name="send_project_report" string="Send info to Manager" type="object" class="oe_highlight" confirm="Send Session info to Manager?"/>
+                    <field name="status" widget="statusbar" clickable="True"/>
+                </header>
                 <sheet>
+                    <field name="image" widget="image"/>
                     <group>
                         <field name="name"/>
                         <field name="client_id"/>
@@ -43,6 +48,23 @@
                                 </form>
                             </field>
                         </page>
+                        <page string="Documents">
+                            <group>
+                                <field name="document_ids" widget="one2many">
+                                    <tree quick_create="true" editable="bottom">
+                                        <field name="name"/>
+                                        <field name="file" filename="name"/>
+                                        <field name="comment"/>
+                                    </tree>
+                                    <form>
+                                        <group>
+                                            <field name="file" filename="name"/>
+                                            <field name="comment"/>
+                                        </group>
+                                    </form>
+                                </field>
+                            </group>
+                        </page>
                     </notebook>
                 </sheet>
             </form>
@@ -60,6 +82,7 @@
                 <field name="client_id"/>
                 <field name="manager"/>
                 <field name="employees_percentage" widget="progressbar"/>
+                <field name="status"/>
             </tree>
         </field>
     </record>

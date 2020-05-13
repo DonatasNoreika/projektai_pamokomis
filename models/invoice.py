@@ -12,6 +12,13 @@ class Invoice(models.Model):
 
     total = fields.Float("Total", compute='_get_total', store=True)
 
+    status = fields.Selection([
+        ('draft', "Draft"),
+        ('started', "Started"),
+        ('done', "Done"),
+        ('cancelled', "Cancelled"),
+    ], string="Progress", default='draft', translate=True)
+
     @api.depends('line_ids.suma')
     def _get_total(self):
         total = 0
