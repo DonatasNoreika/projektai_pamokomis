@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data noupdate="0">
+    <data noupdate="1">
         <record id="project_info_mail_template" model="mail.template">
             <field name="name">Project mail template</field>
             <field name="email_from">${''}</field>
-            <field name="subject">Test</field>
+            <field name="subject">Project ${object.name} info</field>
             <field name="email_to">donoras@gmail.com</field>
             <field name="model_id" ref="projektai.model_projektai_project"/>
             <field name="report_template" ref="report_my_project"/>
             <field name="auto_delete" eval="True"/>
-            <field name="body_html">
-            <![CDATA[
-            <p>Hi,
-            <br/><br/>
-            Test
-            ]]>
+            <field name="body_html" type="html">
+                <div style="margin: 0px; padding: 0px;">
+                    <p style="margin: 0px; padding: 0px; font-size: 13px;">
+                        Hello, ${(object.manager.name)},
+                        It's Info of your project ${(object.name)}.
+                        <br/>
+                        Greetings
+                    </p>
+                </div>
             </field>
         </record>
     </data>

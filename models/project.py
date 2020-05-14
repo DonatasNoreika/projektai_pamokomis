@@ -28,6 +28,8 @@ class Project(models.Model):
     ], string="Progress", default='draft', translate=True)
 
     image = fields.Binary("Image", attachment=True)
+
+    pdf_file = fields.Binary("PDF", attachment=True)
     document_ids = fields.One2many('projektai.document', 'project_id', string='Documents')
 
     @api.depends('employees_ids')

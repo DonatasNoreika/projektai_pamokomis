@@ -65,6 +65,11 @@
                                 </field>
                             </group>
                         </page>
+                        <page string="PDF">
+                            <group>
+                                <field name="pdf_file" widget="pdf_viewer"/>
+                            </group>
+                        </page>
                     </notebook>
                 </sheet>
             </form>
